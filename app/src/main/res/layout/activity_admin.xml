@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/img1"
+    android:layout_height="match_parent"
+    tools:context="com.example.sharif.onlinebooking.Admin">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="10dp"
+    android:paddingLeft="20dp"
+    android:textColor="#FFF"
+    android:background="@drawable/style"
+    android:id="@+id/Bname"
+    android:hint="Enter Book name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/Bname"
+        android:id="@+id/aname"
+        android:paddingLeft="20dp"
+        android:textColor="#FFF"
+        android:background="@drawable/style"
+        android:hint="Enter Auther name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:id="@+id/code"
+        android:textColor="#FFF"
+        android:paddingLeft="20dp"
+        android:background="@drawable/style"
+        android:layout_below="@id/aname"
+        android:hint="Enter Book Code"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/l1"
+        android:layout_below="@id/code">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:hint="Enter price"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:id="@+id/bprice"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/style"
+            android:layout_weight=".5"/>
+        <EditText
+            android:layout_width="0dp"
+            android:hint="Enter Edition"
+            android:inputType="number"
+            android:id="@+id/bedition"
+            android:background="@drawable/style"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="20dp"
+            android:layout_weight=".5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/l2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/l1">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:hint="Enter total page"
+            android:inputType="number"
+            android:id="@+id/bpage"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/style"
+            android:layout_weight=".5"/>
+        <EditText
+            android:layout_width="0dp"
+            android:hint="Enter total words"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:id="@+id/bword"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/style"
+            android:layout_weight=".5"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="@drawable/style"
+        android:layout_marginTop="40dp"
+        android:id="@+id/sa"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/l2"/>
+</RelativeLayout>

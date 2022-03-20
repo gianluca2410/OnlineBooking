@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Online Booking</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="update">Update</string>
+    <string name="insert">Insert</string>
+    <string name="delete">Delete</string>
+    <string name="user">User</string>
+    <string name="admin">Admin</string>
+    <string name="contact">View Contact</string>
+</resources>
